@@ -1,0 +1,15 @@
+
+<!-- while using Input property to pass data from component A to component B -->
+<app-b [msgToChild]="msgToChild" #child (countChanged)="updateCount($event)" ></app-b>
+
+<p> Updated count in parent Component :  {{updatedCount}} </p>
+
+
+
+<!-- <app-b #child> </app-b> -->
+
+<p> Access count property declared in componentB using template reference variable #child : {{child.count}} </p>
+
+
+<p>count value using ViewChild : </p>
+<p> {{compB.count}}  </p>
